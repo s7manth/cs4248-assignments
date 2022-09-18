@@ -1,0 +1,19 @@
+# training dataset
+sents.train
+
+# testing dataset
+sents.test
+
+# actual answers
+sents.answer
+
+# attempt and example files 
+attempt.out
+attempt.answer
+sents-example.test
+sents-example.train
+
+# other binaries and ide files 
+.vscode/
+.idea/
+.DS_Store
