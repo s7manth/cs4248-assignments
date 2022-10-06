@@ -12,8 +12,16 @@ attempt.out
 attempt.answer
 sents-example.test
 sents-example.train
+blind_sents.test
+blind_sents.answer
 
 # other binaries and ide files 
 .vscode/
 .idea/
 .DS_Store
+
+# other files (neel)
+attempt-neel.out
+attempt-neel.answer
+buildtagger-neel.py
+runtagger-neel.py
