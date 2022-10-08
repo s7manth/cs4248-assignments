@@ -7,13 +7,11 @@ sents.test
 # actual answers
 sents.answer
 
-# attempt and example files 
-attempt.out
-attempt.answer
-sents-example.test
-sents-example.train
-blind_sents.test
-blind_sents.answer
+# attempt, test, train and example files 
+*.train
+*.answer
+*.out
+*.test
 
 # other binaries and ide files 
 .vscode/
@@ -21,7 +19,5 @@ blind_sents.answer
 .DS_Store
 
 # other files (neel)
-attempt-neel.out
-attempt-neel.answer
 buildtagger-neel.py
 runtagger-neel.py
