@@ -1,6 +1,7 @@
 # you are not allowed to import other package
 import torch
 
+
 def question1(shape):
     """
     Define a function to return a tensor with all elements are number one with a given shape
@@ -33,6 +34,9 @@ def question5(data):
     """
     Define a function to combine a list of tensors into a new tensor at the last dimension, then expand the 1st dimension
     """
+    x = torch.vstack(data)
+
+    print(x)
 
     return None
 

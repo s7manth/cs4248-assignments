@@ -21,3 +21,9 @@ sents.answer
 # other files (neel)
 buildtagger-neel.py
 runtagger-neel.py
+
+# text files
+*.txt
+
+# pt files
+*.pt

@@ -15,7 +15,7 @@ def main():
     for pred, label in zip(preds, labels):
         if pred == label:
             correct += 1
-    print('Accuracy: {:.2f}'.format(float(correct) / len(labels)))
+    print('Accuracy: {:.5f}'.format(float(correct) / len(labels)))
 
 if __name__ == "__main__":
     main()
