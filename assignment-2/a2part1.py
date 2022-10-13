@@ -44,9 +44,8 @@ def question6(data):
     Combines a list of 1-D tensors with different lengths into a new tensor by padding the shorter
     tensors with 0 on the left side
     """
-
     max_length = max(map(len, data))
-    data = list(map(lambda x: torch.cat((torch.zeros(max_length - x.size(dim=0)), x), dim=0), data))
+    data = list(map(lambda x: torch.cat((torch.zeros(max_length - x.size(dim=0), dtype=torch.long), x), dim=0), data))
     return torch.stack(data)
 
 
@@ -76,7 +75,6 @@ def question10(pairs):
     """
     Calculates the Euclidean distance of each vector pair
     """
-
     return torch.diagonal(torch.cdist(torch.tensor([x[0] for x in pairs]), torch.tensor([x[1] for x in pairs]),
                                       p=2.0), 0)
 
